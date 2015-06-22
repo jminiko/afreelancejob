@@ -1,19 +1,35 @@
-<!doctype html>
-<html lang="en" class="no-js">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><g:layoutTitle default="Grails"/></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <asset:stylesheet src="application.css"/>
-        <asset:javascript src="application.js"/>
-
-        <g:layoutHead/>
-    </head>
-    <body>
-        <div id="grailsLogo" role="banner"><a href="http://grails.org"><asset:image src="grails_logo.png" alt="Grails"/></a></div>
-        <g:layoutBody/>
-        <div class="footer" role="contentinfo"></div>
-        <div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
-    </body>
-</html>
+<div class="container">
+	<div class="gap"></div>
+        <div class="container">
+            <div class="text-center">
+                <h2 class="mb30">Nouvelles Missions</h2>
+                <div class="row row-wrap" id="masonry">
+                    
+                <% request.missions.each{ mission -> %>    
+                    
+                    <a class="col-md-2 col-masonry" href="/detail?id=${mission.key.id}">
+                        <div class="product-thumb">
+                            <div class="product-inner">
+                                <h5 class="product-title">${mission.position}</h5>
+                                <div class="product-desciption">${mission.description.substring(0,65)}...</div>
+                                <div class="product-meta"><span class="product-time"><i class="fa fa-clock-o"></i>
+								${mission.createdDate} 
+								</span>
+                                    <ul class="product-price-list">
+                                        <li><span class="product-price">${mission.pay}</span>
+                                        </li>
+                                        <li><span class="product-price">${mission.beginDate}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="product-location"><i class="fa fa-map-marker"></i> ${mission.area}</p>
+                            </div>
+                        </div>
+                    </a>
+                <% } %>   
+                    
+                </div>	<a href="/" class="btn btn-primary btn-ghost">Lister toutes les missions</a>
+            </div>
+            <div class="gap"></div>
+        </div>
+	</div>
