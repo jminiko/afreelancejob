@@ -6,19 +6,19 @@
                 
                 <ul class="list list-social">
                     <li>
-                        <a class="fa fa-facebook box-icon" href="#" data-toggle="tooltip" title="Facebook"></a>
+                        <a class="fa fa-facebook box-icon" href="http://www.facebook.fr" data-toggle="tooltip" title="Facebook"></a>
                     </li>
                     <li>
-                        <a class="fa fa-twitter box-icon" href="#" data-toggle="tooltip" title="Twitter"></a>
+                        <a class="fa fa-twitter box-icon" href="http://twitter.com" data-toggle="tooltip" title="Twitter"></a>
                     </li>
                     <li>
-                        <a class="fa fa-flickr box-icon" href="#" data-toggle="tooltip" title="Flickr"></a>
+                        <a class="fa fa-flickr box-icon" href="http://www.flickr.com" data-toggle="tooltip" title="Flickr"></a>
                     </li>
                     <li>
-                        <a class="fa fa-linkedin box-icon" href="#" data-toggle="tooltip" title="LinkedIn"></a>
+                        <a class="fa fa-linkedin box-icon" href="http://www.linkedin.com" data-toggle="tooltip" title="LinkedIn"></a>
                     </li>
                     <li>
-                        <a class="fa fa-tumblr box-icon" href="#" data-toggle="tooltip" title="Tumblr"></a>
+                        <a class="fa fa-tumblr box-icon" href="http://www.tumblr.com" data-toggle="tooltip" title="Tumblr"></a>
                     </li>
                 </ul>
                 <p>Pour rester en contact avec les r&eacute;seaux sociaux, le choix vous est donn&eacute;</p>
@@ -66,33 +66,7 @@
                 <div class="col-md-4">
                     <p>Copyright &copy; 2015, A freelance job, tous droits r&eacute;serv&eacute;s</p>
                 </div>
-                <div class="col-md-6 col-md-offset-2">
-                    <div class="pull-right">
-                        <ul class="list-inline list-payment">
-                            <li>
-                                <img src="${resource(dir: 'img',file:'payment/american-express-curved-32px.png')}" alt="Image Alternative text" title="Image Title" />
-                            </li>
-                            <li>
-                                <img src="${resource(dir: 'img/payment',file:'payment/cirrus-curved-32px.png')}" alt="Image Alternative text" title="Image Title" />
-                            </li>
-                            <li>
-                                <img src="${resource(dir: 'img/payment',file:'payment/discover-curved-32px.png')}" alt="Image Alternative text" title="Image Title" />
-                            </li>
-                            <li>
-                                <img src="${resource(dir: 'img/payment',file:'payment/ebay-curved-32px.png')}" alt="Image Alternative text" title="Image Title" />
-                            </li>
-                            <li>
-                                <img src="${resource(dir: 'img/payment',file:'payment/maestro-curved-32px.png')}" alt="Image Alternative text" title="Image Title" />
-                            </li>
-                            <li>
-                                <img src="${resource(dir: 'img/payment',file:'payment/mastercard-curved-32px.png')}" alt="Image Alternative text" title="Image Title" />
-                            </li>
-                            <li>
-                                <img src="${resource(dir: 'img/payment',file:'payment/visa-curved-32px.png')}" alt="Image Alternative text" title="Image Title" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

@@ -12,11 +12,11 @@
                     
                 <% missions.each{ mission -> %>    
                     
-                    <a class="col-md-2 col-masonry" href="/detail?id=${mission.key.id}">
+                    <a class="col-md-2 col-masonry" >
                         <div class="product-thumb">
                             <div class="product-inner">
                                 <h5 class="product-title">${mission.position}</h5>
-                                <div class="product-desciption">${mission.description.substring(0,65)}...</div>
+                                <div class="product-desciption">${mission.description?.substring(0,Math.min(mission.description?.size(),65))}...</div>
                                 <div class="product-meta"><span class="product-time"><i class="fa fa-clock-o"></i>
 								${mission.createdDate} 
 								</span>

@@ -2,9 +2,7 @@
 	<div class="gap"></div>
 	<div class="container">
             <div class="row row-wrap">
-                
-                
-                    <form name="contactForm"  class="contact-form" method="post" action="/postAfter">
+                    <form name="contactForm"  class="contact-form" method="post" action="save">
                         <fieldset>
                         <div class="col-md-3">
                         	<div class="form-group">
@@ -84,8 +82,6 @@
 			                </div>
                         </fieldset>
                     </form>
-               
-                
             </div>
             <div class="gap gap-small"></div>
         </div>
