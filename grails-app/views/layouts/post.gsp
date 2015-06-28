@@ -39,11 +39,7 @@
                                 <div class="bg-warning form-alert" id="form-alert-name">Date de D&eacute;but</div>
                                 <input class="form-control" id="beginDate" name="beginDate" type="text" placeholder="01/01/2016" />
                             </div>
-                 			<div class="form-group">
-                                <label>Technologies</label>
-                                <div class="bg-warning form-alert" id="form-alert-message">Technologies</div>
-                                <textarea class="form-control" name="technologies" id="technologies" placeholder="techno1 techno2 techno3"></textarea>
-                            </div>
+                 			
                             </div>
                             <div class="col-md-3">
                             <div class="form-group">
@@ -66,7 +62,7 @@
                             <div class="form-group">
                                 <label>Description</label>
                                 <div class="bg-warning form-alert" id="form-alert-message">Description</div>
-                                <textarea class="form-control" name="description" id="description" placeholder="description"></textarea>
+                                <textarea class="form-control" name="description" id="description" placeholder="description et technologies"></textarea>
                             </div>
                            <button type="submit" class="btn btn-primary">Save</button>
                             </div>

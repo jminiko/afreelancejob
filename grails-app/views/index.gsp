@@ -12,7 +12,7 @@
                     
                 <% missions.each{ mission -> %>    
                     
-                    <a class="col-md-2 col-masonry" >
+                    <a class="col-md-2 col-masonry"  href="/central/detail?id=${mission.id}">
                         <div class="product-thumb">
                             <div class="product-inner">
                                 <h5 class="product-title">${mission.position}</h5>

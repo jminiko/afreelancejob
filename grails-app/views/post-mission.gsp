@@ -31,11 +31,7 @@
                                 <div class="bg-warning form-alert" id="form-alert-name">Date de D&eacute;but</div>
                                 <g:textField class="form-control" id="beginDate" name="beginDate"  placeholder="01/01/2016" />
                             </div>
-                 			<div class="form-group">
-                                <label>Technologies</label>
-                                <div class="bg-warning form-alert" id="form-alert-message">Technologies</div>
-                                <g:textArea class="form-control" name="technologies"/>
-                            </div>
+                 			
                             </div>
                             <div class="col-md-3">
                             <div class="form-group">
@@ -56,7 +52,7 @@
                                 <g:textField class="form-control" id="telephone" name="telephone" placeholder="+33 3652658911" />
                             </div>
                             <div class="form-group">
-                                <label>Description</label>
+                                <label>Description & technologies</label>
                                 <div class="bg-warning form-alert" id="form-alert-message">Description</div>
                                 <g:textArea class="form-control" name="description"/>
                             </div>
