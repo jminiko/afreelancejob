@@ -30,12 +30,6 @@ class CentralController {
 		render(view:"/mission-detail",model:[mission:mission])
 	}
 
-	def convertToReadableDate(aDate){
-		def sdf =  new SimpleDateFormat("DD/MM/YYYY")
-		
-		return sdf.parse(aDate) 
-	}
-
 	def search(){
 
 		//prepare array of params
