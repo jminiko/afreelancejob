@@ -72,8 +72,8 @@ dataSource:
     pooled: true
     jmxExport: true
     driverClassName: com.mysql.jdbc.Driver
-    username: root
-    password: root
+    username: jminiko
+    password: jminiko
 
 environments:
     development:
