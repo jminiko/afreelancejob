@@ -8,73 +8,55 @@
 	<div class="container">
             <div class="row row-wrap">
                 
-                <g:form class="contact-form" method="GET" name="contactForm" controller="central" action="postAfter">
+                <g:form class="contact-form" method="post" url="[controller:'central',action:'sauvegarde']">
                         <fieldset>
                         <div class="col-md-3">
                         	<div class="form-group">
                                 <label>Poste</label>
-                                <input class="form-control" id="position" name="position" type="text" placeholder="devops" />
+                                <g:textField class="form-control" id="position" name="position" placeholder="devops" />
                             </div>
                             <div class="form-group">
                                 <label>R&eacute;gion</label>
-                                <select class="form-control" name="mission">
-                                	<option value="PARIS">Paris</option>
-                                	<option value="EST">Est de la France</option>
-                                	<option value="SUD">Sud de la France</option>
-                                	<option value="OUEST">Ouest de la France</option>
-                                	<option value="NORD">Nord de la France</option>
-                                	<option value="LUX">Luxembourg</option>
-                                	<option value="CH">Suisse</option>
-                                	<option value="BE">Belgique</option>
-                                	<option value="DE">Allemagne</option>
-                                	<option value="OTH">Autre</option>
-                                </select>
+                                <g:select class="form-control" name="area"
+								from="${['PARIS', 'Est de la France', 'Sud de la France', 'Ouest de la France', 'Nord de la France', 'Luxembourg', 'Suisse','Belgique']}"/>
                             </div>
                             <div class="form-group">
                                 <label>Dur&eacute;e</label>
                                 <div class="bg-warning form-alert" id="form-alert-name">Dur&eacute;e</div>
-                                <select class="form-control" name="length">
-                                	<option value="1MO">1 mois</option>
-                                	<option value="3MO">3 mois</option>
-                                	<option value="6MO">6 mois</option>
-                                	<option value="LON">longue mission</option>
-                                </select>
+                                <g:select class="form-control" name="length"
+									from="${['1 mois','3 mois','6 mois','Longue Mission']}"/>
                             </div>
                             <div class="form-group">
                                 <label>Date de D&eacute;but</label>
                                 <div class="bg-warning form-alert" id="form-alert-name">Date de D&eacute;but</div>
-                                <input class="form-control" id="beginDate" name="beginDate" type="text" placeholder="01/01/2016" />
+                                <g:textField class="form-control" id="beginDate" name="beginDate"  placeholder="01/01/2016" />
                             </div>
-                 			<div class="form-group">
-                                <label>Technologies</label>
-                                <div class="bg-warning form-alert" id="form-alert-message">Technologies</div>
-                                <textarea class="form-control" name="technologies" id="technologies" placeholder="techno1 techno2 techno3"></textarea>
-                            </div>
+                 			
                             </div>
                             <div class="col-md-3">
                             <div class="form-group">
                                 <label>Tarif</label>
-                                <input class="form-control" id="pay" name="pay" type="text" placeholder="300€/j" />
+                                <g:textField class="form-control" id="pay" name="pay" placeholder="300€/j" />
                             </div>
                             
                             <div class="form-group">
                                 <label>Email</label>
-                                <input class="form-control" id="email" name="email" type="text" placeholder="email@domaine.fr" />
+                                <g:textField class="form-control" id="email" name="email"  placeholder="email@domaine.fr" />
                             </div>
                             <div class="form-group">
                                 <label>Contact</label>
-                                <input class="form-control" id="contact" name="contact" type="text" placeholder="nom prenom" />
+                                <g:textField class="form-control" id="contact" name="contact" placeholder="nom prenom" />
                             </div>
                             <div class="form-group">
                                 <label>T&eacute;l&eacute;phone</label>
-                                <input class="form-control" id="telephone" name="telephone" type="text" placeholder="+33 3652658911" />
+                                <g:textField class="form-control" id="telephone" name="telephone" placeholder="+33 3652658911" />
                             </div>
                             <div class="form-group">
-                                <label>Description</label>
+                                <label>Description & technologies</label>
                                 <div class="bg-warning form-alert" id="form-alert-message">Description</div>
-                                <textarea class="form-control" name="description" id="description" placeholder="description"></textarea>
+                                <g:textArea class="form-control" name="description"/>
                             </div>
-                           <g:actionSubmit class="btn btn-primary" value="Stocker la mission" />
+                           <g:actionSubmit class="btn btn-primary" action="sauvegarde" value="Stocker la mission" />
                             </div>
                             <div class="col-md-3">
 			                    <h5>Contact Info</h5>
