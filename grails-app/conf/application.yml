@@ -71,11 +71,9 @@ hibernate:
 dataSource:
     pooled: true
     jmxExport: true
-<<<<<<< HEAD
+
     driverClassName: com.mysql.jdbc.Driver
-=======
-    driverClassName: org.postgresql.Driver
->>>>>>> 2fb3ae4d3271f28ec155e5c88f07015d7ce52a3e
+
     username: jminiko
     password: jminiko
 
@@ -83,15 +81,15 @@ environments:
     development:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:postgresql://localhost:5432/eprocurement
+            url: jdbc:mysql://localhost:3306/eprocurement
     test:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:postgresql://localhost:5432/eprocurement
+            url: jdbc:mysql://localhost:3306/eprocurement
     production:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:postgresql://localhost:5432/eprocurement
+            url: jdbc:mysql://localhost:3306/eprocurement
             properties:
                jmxEnabled = true
                initialSize = 5
